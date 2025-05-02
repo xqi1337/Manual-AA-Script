@@ -29,7 +29,7 @@ class Config:
 
 
 class MouseInput(ctypes.Structure):
-    """Mouseinput Win API"""
+    """Win API Mouse input"""
     _fields_ = [
         ("dx", ctypes.c_long),
         ("dy", ctypes.c_long),
@@ -156,7 +156,7 @@ def main():
     except KeyboardInterrupt:
         pass
     finally:
-        print("Programm beendet.")
+        print("Exit")
 
 
 if __name__ == "__main__":
